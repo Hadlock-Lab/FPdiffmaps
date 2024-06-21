@@ -11,7 +11,7 @@ FP tutorial contains the following examples:
 
 -- Multiplicative Ornstein-Uhlenbeck process with commuting matricies
 
--- Two independe Birth-Death process
+-- Two independent Birth-Death processes
 
 -- 10 D Double well (NOTE: this taks a long time to run)
 
