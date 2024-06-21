@@ -4,6 +4,7 @@ Fokker-Planck diffusion maps for dimensional reduction of stochastic systems.
 General usage is shown in the notebook FP_diffmap_tutorial. Scripts and notebooks for the microglia paper are under the "microglia" subdirectory.
 
 FP tutorial contains the following examples: 
+
 -- Gaussian distribution 
 
 -- Additive Ornstein-Uhlenbeck process
