@@ -51,3 +51,31 @@ dMap, eVals = f.getDiffMap(K)
 
 f.plot_diffmnap(dMap)
 ```
+
+### Microglia
+
+- user must install functions.py at an appropriate place to use properly (site-packages)
+- we apologize for any bugs. 
+- we tried to explain the steps being performed in each chunk
+- this is not meant to be coherent a software package, but instead an illustration of a simple procedure 
+- user is encouraged to use jupyter notebooks instead of these scripts
+
+The order in which these should be run are 
+
+1) preprocessing.R
+2) run commands in 
+3) differential_Expression.py
+4) get_crit_trans_field.py
+5) classify_clusters.py
+6) pseudotime_calc.py
+7) Icsmooth_diff_exp.py
+8) cibersortX_prep.py
+9) cibersortX.results.py
+
+The outputs of each notebook will be used in the next one. It might be wise to rewrite the old data files since they are rather large. The raw data can be obtained synapse with permissions
+
+Olah (raw files only): syn21438358 
+Patel (count and raw files): syn28450881
+Bulk: syn26207321
+
+
