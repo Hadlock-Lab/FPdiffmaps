@@ -63,8 +63,8 @@ f.plot_diffmnap(dMap)
 The order in which these should be run are 
 
 1) preprocessing.R
-2) run commands in 
-3) differential_Expression.py
+2) make_figures_paper.ipynb (to generate diffusion maps and cluster)
+3) differential_expression.ipynb
 4) get_crit_trans_field.py
 5) classify_clusters.py
 6) pseudotime_calc.py
