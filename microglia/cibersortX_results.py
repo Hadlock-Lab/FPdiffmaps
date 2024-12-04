@@ -19,13 +19,13 @@ deconvAd=pd.read_csv('.CIBERSORTx_ad_cptt.csv') #output from CIBERSORTx
 deconvCon=pd.read_csv('./CIBERSORTx_con_cptt.csv') #output from CIBERSORTx
 
 res = []
-for i in range(7):
+for i in range(9):
     adVals = deconvAd[f'cluster{i}'].values
     conVals = deconvCon[f'cluster{i}'].values
     k, p = stats.ks_2samp(adVals, conVals)
     res.append([k,p])
 
-for i in range(7):    
+for i in range(9):    
     plt.hist(deconvAd[f'cluster{i}'], bins=10, alpha = .5, density = True)
     plt.hist(deconvCon[f'cluster{i}'], bins=10, alpha = .5, density = True)
     plt.title(f'cluster{i}')
