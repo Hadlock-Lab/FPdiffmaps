@@ -24,7 +24,7 @@ The basic packages required are
 ```
 pynndescent, numpy, scipy, matplotlib, scanpy, anndata, pandas
 ```
-Load the scipty functions.py by adding the script's path to the 
+Load the scipt functions.py by adding the script's path to the 
 
 ```
 new_path = "/PATH/TO/functions.py"
@@ -55,22 +55,22 @@ f.plot_diffmnap(dMap)
 
 ### Microglia
 
-- user must install functions.py at an appropriate place to use properly (site-packages)
+NOTE: this is not meant to be a fully modular software package! i believe the unique code is too simple to warrant an entire software suite, but i do provide the essential functions needed for all calculations in the script functions.py. i am not a software engineer and so this code is not necessarily optimized or efficient. i have tried to explain what each chunk in each script is doing so as to help the reader. thank you for understanding and please reach out with any questions.
+
+
+- user must install functions.py at an appropriate place to use properly 
 - we apologize for any bugs. 
 - we tried to explain the steps being performed in each chunk
-- this is not meant to be coherent a software package, but instead an illustration of a simple procedure 
 - user is encouraged to use jupyter notebooks instead of these scripts
 
 The order in which these should be run are 
 
-1) preprocessing.R
-2) make_figures_paper.ipynb (to generate diffusion maps and cluster)
-3) differential_expression.ipynb
+1) preprocessing.R : preprocess and integrate the data
+2) diffmap_and_cluster.py : computes diffusion maps, clusters, and pseudobulk analysis
 4) get_crit_trans_field.py
-5) classify_clusters.py
+5) classi
 6) pseudotime_calc.py
 7) Icsmooth_diff_exp.py
-8) cibersortX_prep.py
 9) cibersortX.results.py
 
 The outputs of each notebook will be used in the next one. It might be wise to rewrite the old data files since they are rather large. The raw data can be obtained synapse with permissions
@@ -78,5 +78,4 @@ The outputs of each notebook will be used in the next one. It might be wise to r
 Olah (raw files only): syn21438358 
 Patel (count and raw files): syn28450881
 Bulk: syn26207321
-
 
