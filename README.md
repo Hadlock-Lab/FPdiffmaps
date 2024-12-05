@@ -66,12 +66,12 @@ NOTE: this is not meant to be a fully modular software package! i believe the un
 The order in which these should be run are 
 
 1) preprocessing.R : preprocess and integrate the data
-2) diffmap_and_cluster.py : computes diffusion maps, clusters, and pseudobulk analysis
-4) get_crit_trans_field.py
-5) classi
-6) pseudotime_calc.py
-7) Icsmooth_diff_exp.py
-9) cibersortX.results.py
+2) diffmap_and_cluster.py : computes diffusion maps, clusters, and pseudobulk analysis. 
+4) get_crit_trans_field.py : calculates local critical transition field with a median convolutional filter
+5) classification_and_signatures.py : trains an XGBoost model, runs SHAP, and find high-variance SHAP features
+6) pseudotime_calc.py : calculates pseudo-redial ordering using diffusion pseudotime
+7) Icsmooth_diff_exp.py : smooth Ic vs. pseudoradius by a non-uniform Savitzky-Golay filter, and perform differential expression on top and bottom 5% of cells by Ic value 
+9) cibersortX.results.py : calculates KS-test for deconvolution results
 
 The outputs of each notebook will be used in the next one. It might be wise to rewrite the old data files since they are rather large. The raw data can be obtained synapse with permissions
 
