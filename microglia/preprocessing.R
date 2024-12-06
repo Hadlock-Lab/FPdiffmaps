@@ -6,7 +6,7 @@ library(Seurat)
 library(SeuratDisk)
 library(anndata)
 
-data <- read_h5ad("/Users/andrew/Documents/ROSMAP/velocityOut/patelData/patelOlahCountWithOriginalClusters.h5ad")
+data <- read_h5ad("//PATH/TO/RAW/DATA/INTEGRATE")
 data <- CreateSeuratObject(counts = t(data$X), meta.data = data$obs, min.cells=5, min.features=400)
 
 data[["percent.mt"]] = PercentageFeatureSet(data, pattern = "^MT-")
